@@ -13,17 +13,18 @@
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            background: url('https://source.unsplash.com/1920x1080/?galaxy,nebula,stars') no-repeat center center fixed;
+            background: url('https://source.unsplash.com/1920x1080/?stars,space,universe') no-repeat center center fixed;
             background-size: cover;
             color: white;
         }
         .overlay {
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.7);
             width: 100%;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         .container {
             max-width: 900px;
@@ -38,14 +39,14 @@
             to { opacity: 1; transform: scale(1); }
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 20px;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
         p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -72,6 +73,19 @@
             margin-top: 20px;
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
         }
+        .links {
+            margin-top: 30px;
+        }
+        .links a {
+            color: #ff9000;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #ff4500;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -85,6 +99,12 @@
                 Our platform combines security, intelligence, and automation to skyrocket your portfolio to new heights. 
             </p>
             <a href="#whitepaper" class="cta-button">Download Whitepaper</a>
+            <div class="links">
+                <a href="#roadmap">Roadmap</a>
+                <a href="#team">Our Team</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#development">In Development</a>
+            </div>
         </div>
     </div>
 </body>
